@@ -4,7 +4,9 @@
 echo $KUBECONFIG
 
 echo $KUBECONFIG | base64 -d > ~/.kube/config
-env
 
+echo "Getting pods kubectl"
 
 kubectl get pods
+
+echo "DONE"
