@@ -3,6 +3,9 @@
 
 echo $KUBECONFIG
 
+mkdir -p ~/.kube/
+touch ~/.kube/config
+
 echo $KUBECONFIG | base64 -d > ~/.kube/config
 
 echo "Getting pods kubectl"
