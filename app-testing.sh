@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 
-
-echo $KUBECONFIG
-
 mkdir -p ~/.kube/
 touch ~/.kube/config
 
 echo $KUBECONFIG | base64 -d > ~/.kube/config
+cat ~/.kube/config
 
 echo "Getting pods kubectl"
 
