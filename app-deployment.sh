@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-echo $KUBE_TOKEN
-echo $NAMESPACE
+echo "Kube Token: $KUBE_TOKEN"
+echo "Namespace: $NAMESPACE"
 env
 
 sed -i "s~#{image}~$ARTIFACT_IMAGE~g" bulletin-board-deployment.json
